@@ -1,0 +1,148 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+*, 
+::after,
+::before {
+    box-sizing: border-box;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+button {
+    margin: 5px;
+}
+span {
+    font-weight: bold;
+    color: #bbbbbb;
+}
+.header__title {
+    text-align: center;
+    margin: 50px 5px 50px 5px!important;
+}
+.sections {
+    margin-bottom: 100px;
+}
+.section {
+    background-color: #26a69a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #25a68a;
+    transition: .3s;
+    min-width: 220px;
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+}
+.section__buttons {
+    display: grid;
+    
+}
+.section:hover {
+    transform: scale(1.006);
+    transform: translateY(-5px);
+}
+.section__info {
+    text-align: center;
+}
+.section__info h2 {
+    margin: 5px auto;
+    padding: 5px 0;
+    border-bottom: 2px solid white ;
+    border-radius: 5px;
+}
+.section__form {
+    text-align: center;
+}
+.section__form input[type=number] {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 0;
+    padding-left: 10px;
+}
+input {
+    display: inline-block;
+    width: 100%;
+}
+.section__result {
+    height: 35px;
+}
+@media (max-width: 832px) {
+    .section {
+        padding: 10px;
+        margin: 0;
+        -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0);
+        -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0);
+        box-shadow: 0px 0px 20px 2px rgba(0,0,0,0);
+    }
+    .section:hover {
+        transform: scale(1);
+    }
+}
+@media (max-width: 575px) {
+    .sections {
+        -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    }
+}
+.mw {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gallery {
+    display: grid; 
+    width: 95%;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-bottom: 100px;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+.featured {
+    grid-column: span 2;
+}
+
+/* Proyecto 4 */
+.section__data {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+.personas {
+    grid-column: 1/3;
+}
+@media (max-width: 600px) {
+    .section__data {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .personas {
+        grid-column: 1/1;
+    }
+}
+#personas span {
+    font-weight: bold;
+    margin-right: 30px;
+    color: black;
+}
+
+
+
+/* Home */
+.home {
+    background-color: #212529;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section__right img {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+}
