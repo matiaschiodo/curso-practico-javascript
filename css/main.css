@@ -136,13 +136,19 @@ input {
 .home {
     background-color: #212529;
     color: #fff;
-    padding: 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .section__right img {
     height: 600px;
-    width: 400px;
+    width: 95%;
     object-fit: cover;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
 }
